@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: user-service
+  profiles:
+    active: local
+  cloud:
+    nacos:
+      server-addr: 192.168.10.100:8848
+      config: # 共享配置
+        file-extension: yml
+        shared-configs:
+          - data-id: shared-jdbc.yml
+          - data-id: shared-log.yml
+          - data-id: shared-swagger.yml
+          - data-id: shared-sentinel.yml
+          - data-id: shared-seata.yml

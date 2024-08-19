@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="service-gateway" />
+        <module name="mq-consumer" />
+        <module name="service-cart" />
+        <module name="service-user" />
+        <module name="hm-common" />
+        <module name="mq-publisher" />
+        <module name="service-item" />
+        <module name="hm-service" />
+        <module name="service-pay" />
+        <module name="service-trade" />
+        <module name="service-api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hm-common" options="-parameters" />
+      <module name="hm-service" options="-parameters" />
+      <module name="mq-consumer" options="-parameters" />
+      <module name="mq-publisher" options="-parameters" />
+      <module name="service-api" options="-parameters" />
+      <module name="service-cart" options="-parameters" />
+      <module name="service-gateway" options="-parameters" />
+      <module name="service-item" options="-parameters" />
+      <module name="service-pay" options="-parameters" />
+      <module name="service-trade" options="-parameters" />
+      <module name="service-user" options="-parameters" />
+    </option>
+  </component>
+</project>
